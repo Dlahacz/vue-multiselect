@@ -27,7 +27,7 @@
                 <span class="multiselect__tag" :key="index">
                   <input 
 										type="text"
-										v-model="getOptionLabel(option)"
+										v-model="option.name"
 										v-if="taggable && tagsEditable"
 									>
                   <span v-else v-text="getOptionLabel(option)"></span>
