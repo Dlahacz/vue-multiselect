@@ -27,6 +27,7 @@
                 <span class="multiselect__tag" :key="index">
                   <input 
 										type="text"
+										class="multiselect__tag__input"
 										v-model="option.name"
 										v-if="taggable && tagsEditable"
 									>
@@ -540,6 +541,12 @@ fieldset[disabled] .multiselect {
   overflow: hidden;
   max-width: 100%;
   text-overflow: ellipsis;
+}
+
+.multiselect__tag__input {
+  background: inherit;
+  border: none;
+  color: white;
 }
 
 .multiselect__tag-icon {
