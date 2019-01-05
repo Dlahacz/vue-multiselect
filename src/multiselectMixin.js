@@ -219,6 +219,15 @@ export default {
       default: false
     },
     /**
+     * Disable / Enable editing tags
+     * @default false
+     * @type {Boolean}
+     */
+    tagsEditable: {
+      type: Boolean,
+      default: false
+    },
+    /**
      * String to show when highlighting a potential tag
      * @default 'Press enter to create a tag'
      * @type {String}
